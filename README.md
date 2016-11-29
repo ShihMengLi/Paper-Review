@@ -11,10 +11,10 @@ From
 
 
 ## Approach
-![](Picture_1.jpg)
+![](Picture_1.png)
 
 - Global Coarse-Scale Network
-	![](Picture_2.jpg)
+	![](Picture_2.png)
 	- Usage: 
 		- predict the overall depth map structure using a global view of the scene
 	- Note
@@ -22,7 +22,7 @@ From
 		- All hidden layers use Relu, with the exception of the coarse output layer7, which is linear.
 
 - Local Fine-Scale network
-	![](Picture_3.jpg)
+	![](Picture_3.png)
 	- Usage: 
 		Edit the Coarse prediction it receives to align with local details such as object and wall edges.
 	- Note
@@ -30,7 +30,7 @@ From
 		- All hidden units use rectified linear activations except the last convolutional layer which is linear, as it predicts
 the target depth.
 - Scale-Invariant Error 
-	![](Picture_4.jpg)
+	![](Picture_4.png)
 	- Usage : 
 		- Use a scale-invariant error to measure the relationships between points in the scene. 
 	- Note :
