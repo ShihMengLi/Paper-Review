@@ -30,7 +30,7 @@ From
 		- All hidden units use rectified linear activations except the last convolutional layer which is linear, as it predicts
 the target depth.
 - Scale-Invariant Error 
-	![](Picture_4.png)
+	- ![](Picture_4.png)
 	- Usage : 
 		- Use a scale-invariant error to measure the relationships between points in the scene. 
 	- Note :
