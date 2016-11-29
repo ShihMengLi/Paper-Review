@@ -39,8 +39,8 @@ the target depth.
 with an additional term, − 1 n2 "ij didj, that credits mistakes if they are in the same direction and penalizes them if they oppose.
 
 - Training Loss
-	
-	- Note
+	- ![](Picture_5.png)
+	- Note : 
 		-  Setting λ = 0 reduces to elementwise l2, while λ = 1 is the
 scale-invariant error exactly
 		- We use the average of these, λ = 0.5
