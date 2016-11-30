@@ -26,7 +26,7 @@ From
  - Local Fine-Scale network
 	![](Picture_3.png)
 	- Usage: 
-		Edit the Coarse prediction it receives to align with local details such as object and wall edges.
+		- Edit the Coarse prediction it receives to align with local details such as object and wall edges.
 	- Note
 		- The coarse output is fed in as an additional low-level feature map. 
 		- All hidden units use rectified linear activations except the last convolutional layer which is linear, as it predicts
@@ -36,12 +36,13 @@ the target depth.
 
  - Scale-Invariant Error 
 	- ![](Picture_4.png)
+	- ![](Picture_di.png)
 	- Usage : 
 		- Use a scale-invariant error to measure the relationships between points in the scene. 
 	- Note :
 		- In equation (2),  to have low error, each pair of pixels in the prediction must differ in depth by an amount similar to that of the corresponding pair in the ground truth.
 		- Equation (3) relates the metric to the original l2 error, but
-with an additional term, − 1 n2 "ij didj, that credits mistakes if they are in the same direction and penalizes them if they oppose.
+with an additional term, ![](Picture_didj.png), that credits mistakes if they are in the same direction and penalizes them if they oppose.
 
 
 
