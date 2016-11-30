@@ -40,6 +40,7 @@ the target depth.
 	- Usage : 
 		- Use a scale-invariant error to measure the relationships between points in the scene. 
 	- Note :
+		- **y** is predict depth map, and **y*** is ground truth depth map.
 		- In equation (2),  to have low error, each pair of pixels in the prediction must differ in depth by an amount similar to that of the corresponding pair in the ground truth.
 		- Equation (3) relates the metric to the original l2 error, but
 with an additional term, ![](Picture_didj.png), that credits mistakes if they are in the same direction and penalizes them if they oppose.
